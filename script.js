@@ -62,3 +62,21 @@ function openModal() {
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
 }
+
+
+document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentNode;
+                parent.classList.toggle('active');
+                const icon = item.querySelector('.faq-icon');
+                icon.textContent = parent.classList.contains('active') ? '-' : '+';
+            });
+        });
+
+
+        document.getElementById('youtubeBtn').addEventListener('click', function() {
+            this.classList.remove('animate-pulse');
+            setTimeout(() => {
+                this.classList.add('animate-pulse');
+            }, 100);
+        });

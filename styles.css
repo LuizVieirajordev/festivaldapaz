@@ -892,3 +892,164 @@ h1, h2 {
     color: #fff;
     cursor: pointer;
 }
+
+
+
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .faq-item {
+            background: white;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        .faq-question {
+            background: var(--cor-primaria);
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background: #f8f9fa;
+            color: #333;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        .faq-icon {
+            font-size: 20px;
+        }
+/*youtube*/
+
+.youtube-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            padding: 4rem 1.5rem;
+            text-align: center;
+            border-radius: 8px;
+            margin: 2rem auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .section-description {
+            color: #555;
+            margin-bottom: 2.5rem;
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .youtube-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FF0000;
+            color: white;
+            font-weight: bold;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.25rem;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        }
+        
+        .youtube-btn:hover {
+            background-color: #CC0000;
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(255, 0, 0, 0.4);
+        }
+        
+        .youtube-btn:active {
+            transform: translateY(1px);
+        }
+        
+        .youtube-icon {
+            margin-right: 12px;
+            font-size: 1.5rem;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section-description {
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .youtube-btn {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+            }
+            
+            .youtube-icon {
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .youtube-section {
+                padding: 3rem 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .section-description {
+                font-size: 1rem;
+                margin-bottom: 1.8rem;
+            }
+            
+            .youtube-btn {
+                width: 100%;
+                max-width: 300px;
+                padding: 0.9rem 1.5rem;
+            }
+        }
+        
+        /* Animação de pulsação */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
